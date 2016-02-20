@@ -1,0 +1,23 @@
+{
+  "name": "randomflickerimg",
+  "version": "1.0.0",
+  "description": "Pulls a random image for flicker every X seconds and displays it to the user.",
+  "main": "index.js",
+  "scripts": {
+    "test": "dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pintocarlos/randomflickerimg.git"
+  },
+  "author": "Carlos Pinto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pintocarlos/randomflickerimg/issues"
+  },
+  "homepage": "https://github.com/pintocarlos/randomflickerimg",
+  "devDependencies": {
+    "connect": "^3.4.1",
+    "serve-static": "^1.10.2"
+  }
+}
