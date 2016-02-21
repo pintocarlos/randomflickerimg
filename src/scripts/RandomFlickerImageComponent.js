@@ -1,17 +1,18 @@
 var RandomFlickerImageComponent = function(params) {
-    var self = this;
+    var self            = this;
+    var componentParams = params || {pollingSecondsInterval: 5};
 
-    this.pollingInterval = ko.observable(params.pollingSecondsInterval*1000 || 5000);
-    this.imageUrl = ko.observable();
-    this.title = ko.observable();
-    this.timer = null;
-    this.imageUrls = [];
+    this.pollingInterval = ko.observable(componentParams.pollingSecondsInterval);
+    this.imageUrl        = ko.observable();
+    this.timer           = null;
+    this.imageUrls       = [];
 
     self.initialize();
 };
 
 RandomFlickerImageComponent.prototype = {
     'initialize': function() {
+        this.pollingInterval(this.pollingInterval() * 1000);
         this.imageUrl(this.getNextAvailableImageUrl());
         this.startTimer();
     },
@@ -21,9 +22,6 @@ RandomFlickerImageComponent.prototype = {
         this.timer = setInterval(function() { 
             self.imageUrl(self.getNextAvailableImageUrl()); 
         }, self.pollingInterval());
-    },
-    'resetTimer': function() {
-        clearTimeout(this.timer);
     },
     'retrieveImages': function() {
         var self = this;
