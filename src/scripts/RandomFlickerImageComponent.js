@@ -81,5 +81,5 @@ RandomFlickerImageComponent.prototype = {
 
 ko.components.register('random-flicker-image', {
     viewModel: RandomFlickerImageComponent,
-    template: '<div class="random-flicker-image"><img class="img-thumbnail img-responsive" data-bind="attr: { src: imageUrl }"/></div>'
+    template: '<div class="random-flicker-image"><img data-bind="attr: { src: imageUrl }"/></div>'
 });
