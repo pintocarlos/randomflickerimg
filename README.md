@@ -56,6 +56,7 @@ Tests coverage written using Jasmine can be found in:
  
  Go to: `localhost:8080/src/SpecRunner.html`
 
+
 ## Dependencies
 
 This project requires:
