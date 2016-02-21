@@ -1,4 +1,4 @@
-var RandomFlickerImage = function(params) {
+var RandomFlickerImageComponent = function(params) {
     var self = this;
 
     this.pollingInterval = ko.observable(params.pollingSecondsInterval*1000 || 5000);
@@ -10,7 +10,7 @@ var RandomFlickerImage = function(params) {
     self.initialize();
 };
 
-RandomFlickerImage.prototype = {
+RandomFlickerImageComponent.prototype = {
     'initialize': function() {
         this.imageUrl(this.getNextAvailableImageUrl());
         this.startTimer();
@@ -76,6 +76,6 @@ RandomFlickerImage.prototype = {
 };
 
 ko.components.register('random-flicker-image', {
-    viewModel: RandomFlickerImage,
+    viewModel: RandomFlickerImageComponent,
     template: '<div class="random-flicker-image"><img class="img-thumbnail img-responsive" data-bind="attr: { src: imageUrl }"/></div>'
 });

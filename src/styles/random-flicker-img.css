@@ -1,3 +1,7 @@
+.random-flicker-image {
+	text-align: center;
+}
+
 .random-flicker-image img {
-	width: 100%;
+	width: 50%;
 }

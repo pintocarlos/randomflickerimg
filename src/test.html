@@ -1,11 +1,18 @@
 <html>
+<head>
+<link rel="stylesheet" href="styles/bootstrap.min.css">
+<link rel="stylesheet" href="styles/random-flicker-img.css">
+</head>
 <body>
-
-<random-flicker-image params="{pollingSecondsInterval:5}"></random-flicker-image>
+<div class="row">
+	<div class="col-xs-12">
+		<random-flicker-image params="{pollingSecondsInterval : 5}"></random-flicker-image>
+	</div>
+</div>
 
 <script type='text/javascript' src='scripts/jquery-2.2.0.min.js'></script>
 <script type='text/javascript' src='scripts/knockout-3.4.0.js'></script>
-<script type='text/javascript' src='scripts/FlickerImageComponent.js'></script>
+<script type='text/javascript' src='scripts/RandomFlickerImageComponent.js'></script>
 <script>ko.applyBindings();</script>
 </body>
 </html>
