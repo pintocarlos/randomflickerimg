@@ -48,6 +48,12 @@ The component inside of a sample could be included like this:
 
 The component takes a single parameter called: `pollingSecondsInterval` which is used to determine the number of seconds until displaying a new image.
 
+## Implementation Details
+
+The component makes one single call to the flicker API and keeps in memory all of the urls returned. These urls are parsed and made ready to use for when the timer is up to display a new image. This allows the component to simply update the image url to point to a new one instead of having to hit the flicker api to get a new image which would take a lot longer (new roundtrip API ajax call, parsing it, hitting image url, etc).
+When the image urls available run out, the component hits the API again asynchronously to populate itself with more image urls.
+A placeholder image is used when the component runs out of images to show. 
+
 ## Tests
 
 Tests coverage written using Jasmine can be found in:
