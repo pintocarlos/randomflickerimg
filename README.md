@@ -4,6 +4,8 @@
 
 A standalone JavaScript Knockout Component that sends a request to the public photos feed API and displays a single picture. A new picture is displayed after X number of seconds as configured for the component.
 
+![alt tag](https://raw.githubusercontent.com/pintocarlos/randomflickerimg/master/src/demo1.png)
+
 ## Code Example
 
 Sample usage can be found in: https://github.com/pintocarlos/randomflickerimg/blob/master/src/test.html
@@ -55,6 +57,8 @@ Tests coverage written using Jasmine can be found in:
  `gulp` to start the server
  
  Go to: `localhost:8080/src/SpecRunner.html`
+
+![alt tag](https://raw.githubusercontent.com/pintocarlos/randomflickerimg/master/src/tests.png)
 
 
 ## Dependencies
