@@ -36,6 +36,8 @@ The component inside of a sample could be included like this:
 
 ## Installation
 
+To run the example app using this component perform the following steps:
+
 `git clone https://github.com/pintocarlos/randomflickerimg.git`
 
 `cd randomflickerimg`
