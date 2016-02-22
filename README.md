@@ -20,7 +20,7 @@ The component inside of a sample could be included like this:
 ```html
 <html>
 <head>
-<link rel="stylesheet" href="styles/styles-min.css">
+<link rel="stylesheet" href="dist/styles/styles-min.css">
 </head>
 <body>
 
@@ -74,6 +74,7 @@ Tests coverage written using Jasmine can be found in:
 This project requires:
 - jquery.js >2.0
 - knockout.js >3.0
+- Create your own Flicker API account and get an API key
 
 ## License
 
