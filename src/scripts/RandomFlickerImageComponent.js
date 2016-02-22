@@ -54,6 +54,7 @@ RandomFlickerImageComponent.prototype = {
     'getNextAvailableImageUrl' : function() {
         var imageUrl = "placeholder.jpg";
         if(this.imageUrls.length)
+            // remove one image from array and set that one to be returned
             imageUrl = this.imageUrls.splice(0,1)[0];
         else 
             this.retrieveImages();
