@@ -9,6 +9,8 @@ var RandomFlickerImageComponent = function(params) {
     this.imageUrl        = ko.observable();
     this.timer           = null;
     this.imageUrls       = [];
+    
+    //Key should be updated to match your own developer key
     this.flickerApiKey   = "1b32f0e9fbf2d2ce345e5c736fa1dc75"; 
     self.initialize();
 };
